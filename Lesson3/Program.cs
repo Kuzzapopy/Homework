@@ -1,20 +1,26 @@
 ﻿//Задача 19
 //Напишите программу, которая принимает на вход пятизначное число и проверяет, является ли оно палиндромом.
-/* int Palidrom( int numberLength)
-{
-    if ( )
-}
 
-
-Console.WriteLine ("Введите 5-ти значное число: ");
+Console.WriteLine("Введите число: ");
 string number = Console.ReadLine();
 int len = number.Length;
 
-if ( len == 5)
+if (len == 5)
 {
-
+    if (number[0] == number[4] && number[1] == number[3])
+    {
+        Console.WriteLine($"{number} - Палиндром");
+    }
+    else
+    {
+        Console.WriteLine($"{number} - НЕ палиндром");
+    }
 }
-*/
+else
+{
+    Console.WriteLine($"ОШИБКА: {number} - не является пятизначным");
+}
+
 //Задача 21
 //Напишите программу, которая принимает на вход координаты двух точек и находит расстояние между ними в 3D пространстве.
 /*
@@ -42,7 +48,7 @@ int ReadInt(string message)
 
 //Задача 23
 //Напишите программу, которая принимает на вход число (N) и выдаёт таблицу кубов чисел от 1 до N.
-
+/*
 int ReadInt(string message)
 {
     Console.Write(message);
@@ -56,3 +62,4 @@ for (int i = 1; i <= number; i++)
 {
     Console.Write($" {i * i * i}, ");
 }
+*/
